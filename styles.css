@@ -1,35 +1,78 @@
 body { 
-    color: rgb(7, 58, 43);
+    border: 2px solid darkslategrey;
+    margin: 5%;
+    padding: 0px;
+
+    color: rgb(54, 13, 54);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(247, 235, 235);
 }
 
+header {
+    border: 1px solid rgb(43, 92, 148);
+    background-color: rgb(233, 216, 216);
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+}
+
+main {
+    border: 1px solid rgb(58, 33, 197);
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    margin: 20px 0px; 
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+nav li {
+    border: 1px solid black;
+    background-color: rgb(229, 240, 239);
+    padding: 0px;
+    margin: 0px;
+    display: inline;  
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    }
+
+a:hover {
+    background-color: rgb(125, 140, 211);
+}
+
+a:active {
+    color: chocolate;
+}
+
 h1 {
-    font-family:'Roboto Condensed', sans-serif;
-    font-size: 4.5em;  
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4em;  
+    text-align: center;
 }
 
 h2{
     font-size: 3em;
-    color:slategray;
+    color:rgb(52, 122, 192);
 }
 
-.navborder {
-    border: 3px solid rgb(117, 103, 103);
-    background-color: rgb(228, 221, 218);
-}
-
-main {
-    background-color: rgb(226, 222, 210);
-    border: 3px solid darkgrey ;
-}
-
-.brown-border {
-    border: 2px solid rgb(219, 186, 137);
-    background-color: rgb(225, 247, 213);
+h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 img.photo {
 	border: 1px solid #999;
 	background-color: #fcfcfc;
-	padding: 4px;}
+	padding: 4px;
+}
