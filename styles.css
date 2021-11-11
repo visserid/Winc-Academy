@@ -1,0 +1,35 @@
+body { 
+    color: rgb(7, 58, 43);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(247, 235, 235);
+}
+
+h1 {
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 4.5em;  
+}
+
+h2{
+    font-size: 3em;
+    color:slategray;
+}
+
+.navborder {
+    border: 3px solid rgb(117, 103, 103);
+    background-color: rgb(228, 221, 218);
+}
+
+main {
+    background-color: rgb(226, 222, 210);
+    border: 3px solid darkgrey ;
+}
+
+.brown-border {
+    border: 2px solid rgb(219, 186, 137);
+    background-color: rgb(225, 247, 213);
+}
+
+img.photo {
+	border: 1px solid #999;
+	background-color: #fcfcfc;
+	padding: 4px;}
