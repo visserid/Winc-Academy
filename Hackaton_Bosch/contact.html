@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bosch</title>
+    </head>
+<body>
+    <div class="boschgrid">
+                <header>
+                    <nav class="topnav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="werk.html">Werk</a></li>
+                            <li><a href="Biografie.html">Biografie</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <main>
+                    <div class="contactinfo">
+                        <h1>We horen graag van je!</h1>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p>
+                            <label>Naam: <input type="text" name="name"></label>
+                        </p>
+                        <p>
+                            <label>E-mail: <input type="email" name="email"></label>
+                        </p>
+                        <p>
+                            <label>Telefoonnummer: <input type="tel" name="phonenumber" placeholder="+31612345678" pattern="+316-[0-9]{8}" required></label>
+                        </p>
+                        <p>
+                            <label>Leeftijd: <input type="number" name="age"></label>
+                        </p>
+                        <p>
+                            <label>Verjaardag: <input type="date" name="birthdate"></label>
+                        </p>
+                        </p>
+                        <p>
+                            <label>Wat is jouw favoriete kunstwerk?</label>
+                        </p>
+                        <p>
+                            <textarea name="kunstwerk" rows="4" cols="35"></textarea>
+                        </p>
+                        <p>
+                            <label>Je favoriete website: <input type="url" name="website"></label>
+                        </p>
+                        <input type="reset" name="reset">
+                        <input type="submit" name="submit">
+                        </p>
+                        </form>
+                    </div>
+                </main>
+                <footer>
+                    <form class="newsletter" name="newsletter" method="POST" data-netlify="true">
+                        <p>
+                            Shrijf je in voor de nieuwsbrief:
+                        </p>
+                        <p>
+                            <label>E-mail:<input type="email" name="email"> </label>
+                            <input type="submit" name="submit">
+                        </p>
+                    </form>
+                </footer>
+    </div>
+</body>
+</html>

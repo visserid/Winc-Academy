@@ -1,0 +1,263 @@
+html {
+    margin:0px;
+    background-color: azure;
+}
+
+.boschgrid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1px;  
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+header {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    grid-area: header;
+    font-size: 12px;
+    margin: 5px;
+    border-bottom: 5px solid grey;
+}
+
+main{
+    background-color: rgb(224, 226, 226);
+    font-family: 'Roboto Mono', monospace;
+    grid-area: main;
+    font-size: 12px;
+    height: auto;
+    padding: 10px;
+}
+
+
+h1 {
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer {
+    font-family: 'Roboto Mono', monospace;
+    grid-area: main;
+    font-size: 12px;
+    grid-area: footer;
+    margin: 5px;
+    border-top: 5px solid grey;
+
+}
+
+.link1{
+    text-decoration: underline;
+    font-style: italic;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+
+}
+
+.newsletter {
+    padding: 15px;
+    margin: 0px;
+    width: auto;
+    height: 100%;
+}
+
+.topnav ul{
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: space-left;
+    padding: 0px;
+    border-left: 1px grey solid;  
+}
+
+.topnav li{
+    list-style: none;
+    margin-left: 0px;
+    float: center;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+      
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+
+a:visited{
+    color:black;
+}
+
+.topnav li:hover{
+    border-left: 1px grey solid;  
+}
+
+.topnav li:active {
+    background-color: rgb(224, 226, 226);
+}
+
+main article {
+    padding: 20px;
+    font-size: 10px;
+}
+
+.Tondalus{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactinfo {
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.biografie {
+    text-align: left;
+}
+
+.biografie img {
+    float: right;
+    padding: 10px;
+}
+
+.Boschcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.Bosch1 {
+    width: 125px;
+    margin: 5px;
+}
+
+.Bosch1:hover {
+    transform: scale(1.5);
+    background-color: rgb(224, 226, 226);
+}
+
+/* Media Queries*/
+
+@media (min-width: 600px) {
+
+    header {
+        border-bottom: none;
+    }
+
+    .boschgrid {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 20% 80%;
+        grid-gap: 2px;  
+        grid-template-areas: 
+            "header main"
+            "header main"
+            "footer footer";
+
+    }
+    
+    .topnav ul{
+        height: auto;
+        font-size: 15px;
+        margin-left: 0px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: left;
+        margin: 1px;
+    
+    }
+
+    .topnav li{
+        width: 60%;
+    }
+
+    .topnav li:hover{
+        border-left: none;  
+    }
+    
+    .topnav li:active {
+        background-color: rgb(224, 226, 226);
+    }
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+
+    header{
+        border-top: 5px solid grey;
+    }
+
+    .boschgrid {
+        display: grid;
+        grid-template-columns: 12% 70% 15%;
+        grid-gap: 2px;  
+        grid-template-areas: 
+            "header main footer"
+            "header main footer"
+            "header main footer";
+
+    }
+
+
+    .topnav li{
+        height: auto;
+        font-size: 15px;
+        margin-left: 5px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: left;
+        margin: 1px;
+    }
+
+    .topnav ul{
+        border-left: none;
+    }
+    
+    .topnav li:active {
+        background-color: rgb(224, 226, 226);
+    }
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    footer {
+        border-bottom: 5px solid grey;
+        margin: 5px;
+        height: auto;
+        width: auto;
+    }
+    
+    .newsletter {
+        height: auto;
+        width: 100%;
+    }
+}
